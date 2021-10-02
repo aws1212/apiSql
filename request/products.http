@@ -1,0 +1,35 @@
+@api = http://localhost:5000/products
+
+
+##Select product
+GET {{api}}
+
+###Insert
+POST {{api}}
+Content-type: application/json
+
+{
+    "name": "phone",
+    "description": "Huawei phone",
+    "quantity": 10
+}
+
+###Select bi id
+GET {{api}}/5
+
+###Deliting
+DELETE {{api}}/4
+
+###Get total products
+GET {{api}}/count
+
+
+### update a product
+PUT {{api}}/5
+Content-type: application/json
+
+{
+    "name": "Teclado",
+    "description": "Teclado genius",
+    "quantity": 80
+}
